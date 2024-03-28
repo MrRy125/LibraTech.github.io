@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+header nav a:last-child {
+    background-color: #f8f9fa;
+    color: #0056b3;
+    border-radius: 8px;
+}
+
+header nav a:last-child:hover {
+    background-color: #0056b3;
+    color: #f8f9fa;
+    border-radius: 8px;
+    border-bottom: #0056b3;
+}
+
+header nav a:hover {
+    color: #f8f9fa;
+    border-bottom: #f8f9fa solid 2px;
+    transition: all ease 1s;
+}
+
+main {
+    position: relative;
+    top: 20%;
+}
+
+/* Code Here */
+.book-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.book-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.book-details .details {
+    margin-bottom: 20px;
+}
+
+.book-details .details p {
+    margin-bottom: 10px;
+}
+
+.book-details .details span {
+    font-weight: normal;
+}
+
+.book-details .description {
+    margin-bottom: 20px;
+}
+
+.book-details .description p {
+    margin-bottom: 10px;
+}
+
+.book-details .download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-details .download-btn:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    background-color: transparent;
+    color: #000;
+    padding: 8.97rem;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    filter: drop-shadow(4px 4px 8px #000);
+  }
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 25%;
+}
+
+.menu-toggle {
+    display: none; /* Hide burger menu icon by default */
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: transform 0.4s ease;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f8f9fa;
+}
+
+.hide {
+    display: none;
+}
+
+.hide li {
+    list-style: none;
+}
+
+.hide a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.hide a:hover {
+    color: #f8f9fa;
+}
+
+.show li {
+    list-style: none;
+}
+
+.show a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.show a:hover {
+    color: #f8f9fa;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show burger menu icon for mobile devices */
+    }
+
+    .nav-links {
+        display: none;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        padding: 0;
+        top: 80px;
+    }
+
+    .nav-links li:hover {
+        background-color: #f2f2f2;
+        color: #ddd;
+    }
+    .nav-links li {
+        padding: 14px 16px;
+    }
+
+    .show li {
+        padding: 14px 16px;
+    }
+
+    .show {
+        display: block; /* Show navigation links when burger menu is clicked */
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        background-color: #0056b3;
+        position: absolute;
+        padding: 0;
+        top: 80px;
+        transition: all 2s ease;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    nav a {
+        display: none;
+    }
+}
+
+/* Responsive CSS with Media Queries */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav a {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    header nav a:last-child {
+        padding: 5px 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header nav a {
+        margin-left: 15px;
+        padding: 8px;
+    }
+
+    header nav a:last-child {
+        padding: 8px 12px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header nav a {
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    header nav a:last-child {
+        padding: 10px 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}
+

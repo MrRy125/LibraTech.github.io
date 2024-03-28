@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LibraTech - About</title>
+<link rel="stylesheet" href="about.css">
+<link rel="icon" href="icons/library.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LibraTech</h1>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="upload.html">Upload</a>
+                <a href="#">About Us</a>
+                <a href="signIn.html">Sign In</a>
+            </nav>         
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Code Here -->
+        <section class="web-info">
+            <div class="container">
+                <h2>About LibraTech</h2>
+                <p>Welcome to LibraTech, your premier destination for technology ebooks! Our mission is to provide a comprehensive collection of ebooks covering various topics in technology, IT, and digital innovation.</p>
+                <p>At LibraTech, we are committed to offering high-quality content curated by experts in the field. Whether you're a student, professional, or technology enthusiast, you'll find valuable resources to enhance your knowledge and skills.</p>
+                <p>Our platform is designed to be user-friendly, allowing you to browse, search, and access a wide range of ebooks with ease. Explore different categories such as AI & ML, App Development, Cybersecurity, Web Development, and more.</p>
+                <p>Join our community of learners and stay updated with the latest trends and advancements in technology. LibraTech is your gateway to unlocking a world of knowledge and opportunities.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <div class="contact-item">
+                    <h3>Email:</h3>
+                    <p>abcde12345@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone:</h3>
+                    <p>1234-567-8900</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Address:</h3>
+                    <p>Villanueva Misamis Oriental, Philippines</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="social-media">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-form">
+            <div class="container">
+                <h2>Message Form</h2>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <strong><label for="name">Name:</label></strong>
+                        <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                    </div>
+                    <div class="form-group">
+                        <strong><label for="email">Email:</label></strong>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    </div>
+                    <div class="form-group">
+                        <strong><label for="message">Message:</label></strong>
+                        <textarea id="message" name="message" placeholder="Enter your message..." required></textarea>
+                    </div>
+                    <button type="submit" id="sendMessageBtn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Modal -->
+        <div id="statusModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalMessage"></p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LibraTech E-Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="about.js"></script>
+</body>
+</html>

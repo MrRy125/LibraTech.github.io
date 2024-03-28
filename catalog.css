@@ -1,0 +1,390 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+header nav a:last-child {
+    background-color: #f8f9fa;
+    color: #0056b3;
+    border-radius: 8px;
+}
+
+header nav a:last-child:hover {
+    background-color: #0056b3;
+    color: #f8f9fa;
+    border-radius: 8px;
+    border-bottom: #0056b3;
+}
+
+header nav a:hover {
+    color: #f8f9fa;
+    border-bottom: #f8f9fa solid 2px;
+    transition: all ease 1s;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+.catalog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.catalog h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333; /* Adjust color as needed */
+}
+
+.search-filter {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.search-filter input[type="text"],
+.search-filter select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.search-filter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease;
+}
+
+.search-filter button:hover {
+    background-color: #0056b3;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.book-card .details-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Add spacing below the button */
+}
+
+.book-card .details-btn:hover {
+    background-color: #0056b3;
+}
+
+.book-card .download-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #28a745; /* Green color for download button */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-card .download-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#pagination-buttons {
+    margin-top: 240px;
+    text-align: center;
+  }
+
+  #pagination-buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #pagination-buttons button:hover {
+    background-color: #45a049;
+  }
+
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 30%;
+}
+
+.menu-toggle {
+    display: none; /* Hide burger menu icon by default */
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: transform 0.4s ease;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f8f9fa;
+}
+
+.hide {
+    display: none;
+}
+
+.hide li {
+    list-style: none;
+}
+
+.hide a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.hide a:hover {
+    color: #f8f9fa;
+}
+
+.show {
+    display: none;
+}
+
+.show li {
+    list-style: none;
+}
+
+.show a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.show a:hover {
+    color: #f8f9fa;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show burger menu icon for mobile devices */
+    }
+
+    .nav-links {
+        display: none;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        padding: 0;
+        top: 80px;
+    }
+
+    .nav-links li:hover {
+        background-color: #f2f2f2;
+        color: #ddd;
+    }
+    .nav-links li {
+        padding: 14px 16px;
+    }
+
+    .show li {
+        padding: 14px 16px;
+    }
+
+    .show {
+        display: block; /* Show navigation links when burger menu is clicked */
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        background-color: #0056b3;
+        position: absolute;
+        padding: 0;
+        top: 80px;
+        transition: all 2s ease;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .book-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
+
+
+/* Responsive CSS with Media Queries */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav a {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    header nav a:last-child {
+        padding: 5px 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header nav a {
+        margin-left: 15px;
+        padding: 8px;
+    }
+
+    header nav a:last-child {
+        padding: 8px 12px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header nav a {
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    header nav a:last-child {
+        padding: 10px 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+    .show {
+        display: none;
+    }
+}

@@ -1,0 +1,558 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+header nav a:last-child {
+    background-color: #f8f9fa;
+    color: #0056b3;
+    border-radius: 8px;
+}
+
+header nav a:last-child:hover {
+    background-color: #0056b3;
+    color: #f8f9fa;
+    border-radius: 8px;
+    border-bottom: #0056b3;
+}
+
+header nav a:hover {
+    color: #f8f9fa;
+    border-bottom: #f8f9fa solid 2px;
+    transition: all ease 1s;
+}
+
+main {
+    position: relative;
+    top: 80px;
+}
+
+/* Code Here */
+
+.web-info {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.web-info .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+
+.web-info h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333; /* Adjust color as needed */
+    text-align: center;
+}
+
+.web-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Adjust color as needed */
+}
+
+.contact-info .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Adjust color as needed */
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.contact-item h3 {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #555; /* Adjust color as needed */
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #666; /* Adjust color as needed */
+}
+
+
+/* Social Media Accounts Section */
+.social-media {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.social-media .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style each social media icon with a background color and hover effect */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 3%; /* Add padding to create space around the icon */
+    border-radius: 15px; /* Rounded border for circular shape */
+    font-size: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and color changes */
+    text-align: center;
+}
+
+/* Set specific background colors for each social media icon */
+.social-icons a:nth-child(1) {
+    background-color: #fff; /* Facebook blue */
+    color: #3b5998; /* Text color for contrast */
+    border: 2px solid #3b5998;
+}
+
+.social-icons a:nth-child(2) {
+    background-color: #fff; /* Twitter blue */
+    color: #1da1f2; /* Text color for contrast */
+    border: 2px solid #1da1f2;
+}
+
+.social-icons a:nth-child(3) {
+    background-color: #fff; /* Instagram purple */
+    color: #c32aa3; /* Text color for contrast */
+    border: 2px solid #c32aa3;
+}
+
+.social-icons a:nth-child(4) {
+    background-color: #fff; /* LinkedIn blue */
+    color: #0077b5; /* Text color for contrast */
+    border: 2px solid #0077b5;
+}
+
+.social-icons a:nth-child(5) {
+    background-color: #fff; /* GitHub black */
+    color: #333; /* Text color for contrast */
+    border: 2px solid #333;
+}
+
+/* Change background color and text color on hover */
+
+.social-icons a:nth-child(1):hover {
+    background-color: #3b5998; /* Facebook blue on hover */
+    color: #fff;
+}
+
+.social-icons a:nth-child(2):hover {
+    background-color: #1da1f2; /* Twitter blue on hover */
+    color: #fff;
+}
+
+.social-icons a:nth-child(3):hover {
+    background-color: #c32aa3; /* Instagram purple on hover */
+    color: #fff;
+}
+
+.social-icons a:nth-child(4):hover {
+    background-color: #0077b5; /* LinkedIn blue on hover */
+    color: #fff;
+}
+
+.social-icons a:nth-child(5):hover {
+    background-color: #333; /* GitHub black on hover */
+    color: #fff;
+}
+
+
+/* Message Form Section */
+.message-form {
+    padding: 50px 0;
+}
+
+.message-form .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.message-form h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333; /* Adjust color as needed */
+}
+
+.message-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.message-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333; /* Adjust color as needed */
+}
+
+.message-form input,
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.message-form textarea {
+    height: 100px;
+}
+
+.message-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 18% 400px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    color: #0056b3;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #aaa;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 30%;
+}
+
+.menu-toggle {
+    display: none; /* Hide burger menu icon by default */
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: transform 0.4s ease;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f8f9fa;
+}
+
+.hide {
+    display: none;
+}
+
+.hide li {
+    list-style: none;
+}
+
+.hide a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.hide a:hover {
+    color: #f8f9fa;
+}
+
+.show {
+    display: none;
+}
+
+.show li {
+    list-style: none;
+}
+
+.show a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.show a:hover {
+    color: #f8f9fa;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show burger menu icon for mobile devices */
+    }
+
+    .nav-links {
+        display: none;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        padding: 0;
+        top: 80px;
+    }
+
+    .nav-links li:hover {
+        background-color: #f2f2f2;
+        color: #ddd;
+    }
+    .nav-links li {
+        padding: 14px 16px;
+    }
+
+    .show li {
+        padding: 14px 16px;
+    }
+
+    .show {
+        display: block; /* Show navigation links when burger menu is clicked */
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        background-color: #0056b3;
+        position: absolute;
+        padding: 0;
+        top: 80px;
+        transition: all 2s ease;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .web-info h2,
+    .contact-info h2,
+    .social-media h2,
+    .message-form h2 {
+        font-size: 28px;
+    }
+
+    .web-info p,
+    .contact-info p,
+    .social-media p {
+        font-size: 16px;
+    }
+
+    .message-form form {
+        max-width: 100%;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 50% 50px;
+        padding: 50px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        text-align: center;
+        color: #0056b3;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: #aaa;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .social-icons a:nth-child(1) {
+        background-color: #fff; /* Facebook blue */
+        color: #3b5998; /* Text color for contrast */
+        border: 2px solid #3b5998;
+        padding: 8px 3.8%;
+    }
+}
+
+
+/* Responsive CSS with Media Queries */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav a {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    header nav a:last-child {
+        padding: 5px 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header nav a {
+        margin-left: 15px;
+        padding: 8px;
+    }
+
+    header nav a:last-child {
+        padding: 8px 12px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header nav a {
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    header nav a:last-child {
+        padding: 10px 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+    .show {
+        display: none;
+    }
+}

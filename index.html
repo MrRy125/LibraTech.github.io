@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LibraTech - Home</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icons/library.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LibraTech</h1>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <a href="#">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="upload.html">Upload</a>
+                <a href="about.html">About Us</a>
+                <a href="signIn.html">Sign In</a>
+            </nav>         
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to LibraTech E-Library</h2>
+                <p>Your gateway to a world of knowledge.</p>
+                <a href="catalog.html">Browse</a>
+            </div>
+        </section>
+
+        <section class="featured-books">
+            <div class="container">
+                <h3>Featured Books</h3>
+                <div class="book-list">
+                    <!-- Featured books will be dynamically added here -->
+                    <div class="book-card">
+                        <img src="images/book206.png" alt="Book Cover">
+                        <h4>HTML5</h4>
+                        <p>Author: Tutorialspoint</p>
+                        <p>Category: Web Development</p>
+                        <button class="download-btn" data-download="\books\Web Development\HTML5.pdf">Download</button>
+                    </div>
+                  <div class="book-card">
+                        <img src="images/book1.png" alt="Book Cover">
+                        <h4>Artificial Intelligence</h4>
+                        <p>Author: Tutorialspoint</p>
+                        <p>Category: AI & ML</p>
+                        <button class="download-btn" data-download="\books\AI & ML\Artificial Intelligence.pdf">Download</button>
+                    </div>
+                  <div class="book-card">
+                        <img src="images/book145.png" alt="Book Cover">
+                        <h4>Python</h4>
+                        <p>Author: Tutorialspoint</p>
+                        <p>Category: Programming Languages</p>
+                        <button class="download-btn" data-download="\books\Programming Languages\Python.pdf">Download</button>
+                    </div>
+                  <div class="book-card">
+                        <img src="images/book12.png" alt="Book Cover">
+                        <h4>Android</h4>
+                        <p>Author: Tutorialspoint</p>
+                        <p>Category: App Development</p>
+                        <button class="download-btn" data-download="\books\App Development\Android.pdf">Download</button>
+                    </div>
+                  <div class="book-card">
+                        <img src="images/book29.png" alt="Book Cover">
+                        <h4>Ethical Hacking</h4>
+                        <p>Author: Tutorialspoint</p>
+                        <p>Category: Cybersecurity</p>
+                        <button class="download-btn" data-download="\books\Cybersecurity\Ethical Hacking.pdf">Download</button>
+                    </div>
+                  <div class="book-card">
+                        <img src="images/book189.png" alt="Book Cover">
+                        <h4>Software Engineering</h4>
+                        <p>Author: Tutorialspoint</p>
+                        <p>Category: Technology Topics</p>
+                        <button class="download-btn" data-download="\books\TechTopics\Software Engineering.pdf">Download</button>
+                    </div>
+                    <!-- Add more featured book cards as needed -->
+                </div>
+                <!-- <a href="catalog.html">View More</a> -->
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h3>Why Choose LibraTech E-Library?</h3>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <img src="icons/books.png" alt="Benefit Icon">
+                        <h4>Wide Range of Books</h4>
+                        <p>Explore a vast collection of books across various categories.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="icons/search.png" alt="Benefit Icon">
+                        <h4>Advanced Search Options</h4>
+                        <p>Utilize advanced search filters to find specific books quickly and efficiently.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="icons/mode-portrait.png" alt="Benefit Icon">
+                        <h4>User-Friendly Interface</h4>
+                        <p>Enjoy a seamless browsing experience with our intuitive interface.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="icons/download.png" alt="Benefit Icon">
+                        <h4>Download Anytime, Anywhere</h4>
+                        <p>Access and download books anytime, anywhere for offline reading.</p>
+                    </div>
+                    <!-- Add more benefit items as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LibraTech E-Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

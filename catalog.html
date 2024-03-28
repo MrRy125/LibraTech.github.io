@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Catalog</title>
+<link rel="stylesheet" href="catalog.css">
+<link rel="icon" href="icons/library.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LibraTech</h1>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="#">Catalog</a>
+                <a href="upload.html">Upload</a>
+                <a href="about.html">About Us</a>
+                <a href="signIn.html">Sign In</a>
+            </nav>         
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Code Here -->
+        <section class="catalog">
+            <div class="container">
+                <h2>Book Catalog</h2>
+                <div class="search-filter">
+                    <input type="text" id="search" placeholder="Search by book title...">
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="AI & ML">AI & ML</option>
+                        <option value="App Development">App Development</option>
+                        <option value="Automation">Automation</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Data analysis">Data Analysis</option>
+                        <option value="Database">Database</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Frameworks">Frameworks</option>
+                        <option value="GUI">GUI</option>
+                        <option value="Microsoft Technologies">Microsoft Technologies</option>
+                        <option value="Networking">Networking</option>
+                        <option value="Programming Languages">Programming Languages</option>
+                        <option value="Technology Topics">Technology Topics</option>
+                        <option value="Web Development">Web Development</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                          
+                    <button onclick="searchBooks()">Search</button>   
+                </div>
+                <div class="book-list">
+                    <!-- Books will be dynamically added here -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <div id="pagination-buttons">
+            <button onclick="displayBooks(1)" id="prevPage">1</button>
+            <button onclick="displayBooks(2)" id="prevPage">2</button>
+            <button onclick="displayBooks(3)" id="prevPage">3</button>
+            <button onclick="displayBooks(4)" id="prevPage">4</button>
+            <button onclick="displayBooks(5)" id="prevPage">5</button>
+            <button onclick="displayBooks(6)" id="prevPage">6</button>
+        </div>
+          
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LibraTech E-Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
